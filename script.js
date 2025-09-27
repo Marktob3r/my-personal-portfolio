@@ -38,6 +38,7 @@ function applyTheme(theme) {
     toggle.setAttribute('aria-label', 'Switch to dark mode');
   }
   localStorage.setItem('theme', theme);
+    updateImages(theme);
 }
 
 toggle.addEventListener('click', () => {
@@ -101,3 +102,12 @@ document.addEventListener('DOMContentLoaded', () => {
   const originalHideTimeout = 4000;
   setTimeout(() => { lastHiddenAt = Date.now(); }, originalHideTimeout + 50);
 });
+
+function updateImages(theme) {
+  document.querySelectorAll('img.themed-img').forEach(img => {
+    const darkSrc  = img.dataset.dark;
+    const lightSrc = img.dataset.light;
+    if (!darkSrc || !lightSrc) return;
+    img.src = (theme === 'dark') ? darkSrc : lightSrc;
+  });
+}

@@ -160,6 +160,25 @@ section {
     position: relative;
 }
 
+#waving {
+  display: inline-block;
+  animation-name: wave-animation;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  transform-origin: 70% 70%;
+}
+
+@keyframes wave-animation {
+    0% { transform: rotate( 0.0deg) }
+   10% { transform: rotate(14.0deg) }
+   20% { transform: rotate(-8.0deg) }
+   30% { transform: rotate(14.0deg) }
+   40% { transform: rotate(-4.0deg) }
+   50% { transform: rotate(10.0deg) }
+   60% { transform: rotate( 0.0deg) }
+  100% { transform: rotate( 0.0deg) }
+}
+
 .about {
     display: flex;
     flex-direction: column;
@@ -289,62 +308,39 @@ section {
 }
 
 .item1 {
-    animation-delay: calc(30s / 10 * (10 - 1) * -1);
+    animation-delay: calc(30s / 9 * (9 - 1) * -1);
 }
 
 .item2 {
-    animation-delay: calc(30s / 10 * (10 - 2) * -1);    
+    animation-delay: calc(30s / 9 * (9 - 2) * -1);    
 }
 
 .item3 {
-    animation-delay: calc(30s / 10 * (10 - 3) * -1);    
+    animation-delay: calc(30s / 9 * (9 - 3) * -1);    
 }
 
 .item4 {
-    animation-delay: calc(30s / 10 * (10 - 4) * -1);    
+    animation-delay: calc(30s / 9 * (9 - 4) * -1);    
 }
 
 .item5 {
-    animation-delay: calc(30s / 10 * (10 - 5) * -1);    
+    animation-delay: calc(30s / 9 * (9 - 5) * -1);    
 }
 
 .item6 {
-    animation-delay: calc(30s / 10 * (10 - 6) * -1);    
+    animation-delay: calc(30s / 9 * (9 - 6) * -1);    
 }
 
 .item7 {
-    animation-delay: calc(30s / 10 * (10 - 7) * -1);    
+    animation-delay: calc(30s / 9 * (9 - 7) * -1);    
 }
 
 .item8 {
-    animation-delay: calc(30s / 10 * (10 - 8) * -1);    
+    animation-delay: calc(30s / 9 * (9 - 8) * -1);    
 }
 
 .item9 {
-    animation-delay: calc(30s / 10 * (10 - 9) * -1);    
-}
-
-.item10 {
-    animation-delay: calc(30s / 10 * (10 - 10) * -1);   
-}
-
-@media (max-width: 768px) {
-    .about-top { 
-        text-align: 
-        left; align-items: 
-        flex-start; 
-        padding: 24px; 
-    }
-    .about-bottom { 
-        padding: 24px; 
-    }
-    .technologies { 
-        height: 120px; 
-    }
-    .item, .items { 
-        width: 140px; 
-        height: 100px; 
-    }
+    animation-delay: calc(30s / 9 * (9 - 9) * -1);    
 }
 
 .skills {
@@ -536,3 +532,41 @@ footer {
     opacity: 0;
 }
 
+@media (max-width: 320px) {
+
+}
+
+@media (max-width: 480px) {
+
+}
+
+@media (max-width: 768px) {
+    .about-top { 
+        text-align: 
+        left; align-items: 
+        flex-start; 
+        padding: 24px; 
+    }
+    .about-bottom { 
+        padding: 24px; 
+    }
+    .technologies { 
+        height: 120px; 
+    }
+    .item, .items { 
+        width: 140px; 
+        height: 100px; 
+    }
+}
+
+@media (max-width: 1024px) {
+
+}
+
+@media (max-width: 1280px) {
+
+}
+
+@media (max-width: 1440px) {
+
+}
