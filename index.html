@@ -3,195 +3,135 @@
 <html lang="en">
 
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
-    <link rel="shortcut icon" href="assets/logos/lightlogos/github.png" type="image/x-icon">
-    <title>My Portfolio</title>
+    <title>Landing Page 2.0</title>
 
 </head>
 
 <body>
 
-    <header class="header">
-        <div class="logo">
-            <h1>MARK</h1>
+    <header>
+        <div class="logo-placeholder">
+            <h1>Mark</h1>
         </div>
-        <div class="nav">
-            <a href="#about" class="nav-link">About</a>
-            <a href="#skills" class="nav-link">Skills</a>
-            <a href="#contact" class="nav-link">Contact</a>
-        </div>
-        <div class="mode" id="mode-toggle" role="button" aria-label="Toggle dark mode" tabindex="0">
-            <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px"><path d="M484-80q-84 0-157.5-32t-128-86.5Q144-253 112-326.5T80-484q0-132 77.5-238T361-868q17-5 31 5t12 27q-7 88 23.5 169.5T521-522q63 63 145 94t170 24q17-2 26.5 13t4.5 32q-40 125-145.5 202T484-80Z"/></svg>
+        <div class="theme-toggle">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="#000000"><path d="M484-80q-84 0-157.5-32t-128-86.5Q144-253 112-326.5T80-484q0-132 77.5-238T361-868q17-5 31 5t12 27q-7 88 23.5 169.5T521-522q63 63 145 94t170 24q17-2 26.5 13t4.5 32q-40 125-145.5 202T484-80Z"/></svg>
         </div>
     </header>
 
-    <div id="alert-box" class="alert">
-        Welcome to my page!
-    </div>
-
     <main>
 
-        <div class="scroll-arrow">
-            <svg xmlns="http://www.w3.org/2000/svg" height="34px" viewBox="0 -960 960 960" width="34px"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg>
-        </div>
-
-        <section class="first">
-            <div>
-                <img src="assets/pictures/me.jpeg" alt="picture" draggable="false">
-                <h1>Hi! I'm Mark Christian Gabriel<span id="waving">👋</span></h1>
-                <h3>3rd-Year BSIT College Student</h3>
-                <pre>I craft exceptional digital experiences through thoughtful design and robust development. 
-                    Passionate about building products that make a difference.</pre>
-            </div>
+        <section class="section-1">
+            <img src="assets/pictures/me.jpeg">
+            <h1>Hi there! I'm Mark Christian Gabriel<span id="waving">👋</span></h1>
+            <h3>3rd-Year BSIT College Student</h3>
+            <p>I craft exceptional digital experiences through thoughtful design and robust development. Passionate about building products that make a difference.</p>
         </section>
 
-        <section class="about" id="about">
-            <div class="about-top">
-                <h2>About Me</h2>
-                <p>I'm a passionate full-stack developer with over 5 years of experience building modern web applications. I love turning complex problems into simple, beautiful, and intuitive solutions.
-                When I'm not coding, you'll find me exploring new technologies, contributing to open-source projects, or enjoying the great outdoors. I believe in continuous learning and staying up-to-date with the latest industry trends.
-                I'm currently focused on building scalable web applications using React, TypeScript, and modern backend technologies.</p>
+        <section class="section-2">
+
+            <div class="section-2t">
+                <h1>About Me</h1>
+                <p>I'm an experienced front-end developer with 2+ years of experience in building scalable web applications using the basics: HTML, CSS and JavaScript. I'm  passionate about continuous learning and elegant problem-solving.</p>
             </div>
-            <div class="about-bottom">
-                <h2>Technologies I've Used</h2>
-                <div class="technologies">
-                    <div class="item item1"><img class="themed-img" data-light="assets/logos/html.png" data-dark="assets/logos/lightlogos/html.png" draggable="false"></div>
-                    <div class="item item2"><img class="themed-img" data-light="assets/logos/css.png" data-dark="assets/logos/lightlogos/css.png" draggable="false"></div>
-                    <div class="item item3"><img class="themed-img" data-light="assets/logos/javascript.png" data-dark="assets/logos/lightlogos/javascript.png" draggable="false"></div>
-                    <div class="item item4"><img class="themed-img" data-light="assets/logos/git.png" data-dark="assets/logos/lightlogos/git.png" draggable="false"></div>
-                    <div class="item item5"><img src="assets/logos/c++.png" draggable="false"></div>
-                    <div class="item item6"><img src="assets/logos/java.png" draggable="false"></div>
-                    <div class="item item7"><img class="themed-img" data-light="assets/logos/capcut.png" data-dark="assets/logos/lightlogos/capcut.png" draggable="false"></div>
-                    <div class="item item8"><img src="assets/logos/bun.png" draggable="false"></div>
-                    <div class="item item9"><img class="themed-img" data-light="assets/logos/github.png" data-dark="assets/logos/lightlogos/github.png" draggable="false"></div>
+
+            <div class="section-2b">
+                <h1>Technologies I've Used</h1>
+                <div class="wrapper">
+                    <div class="items1 item1"><img src="assets/logos/html.png" draggable="false"></div>
+                    <div class="items1 item2"><img src="assets/logos/css.png" draggable="false"></div>
+                    <div class="items1 item3"><img src="assets/logos/javascript.png" draggable="false"></div>
+                    <div class="items1 item4"><img src="assets/logos/github.png" draggable="false"></div>
+                    <div class="items1 item5"><img src="assets/logos/git.png" draggable="false"></div>
+                    <div class="items1 item6"><img src="assets/logos/python.png" draggable="false"></div>
+                    <div class="items1 item7"><img src="assets/logos/xampp.png" draggable="false"></div>
+                    <div class="items1 item8"><img src="assets/logos/photoshop.png" draggable="false"></div>
                 </div>
-                <div class="technologies">
-                    <div class="items item1"><img src="assets/logos/react.png" draggable="false"></div>
-                    <div class="items item2"><img class="themed-img" data-light="assets/logos/node.png" data-dark="assets/logos/lightlogos/node.png" draggable="false"></div>
-                    <div class="items item3"><img class="themed-img" data-light="assets/logos/office.png" data-dark="assets/logos/lightlogos/office.png" draggable="false"></div>
-                    <div class="items item4"><img src="assets/logos/photoshop.png" draggable="false"></div>
-                    <div class="items item5"><img src="assets/logos/php.png" draggable="false"></div>
-                    <div class="items item6"><img src="assets/logos/postgresql.png" draggable="false"></div>
-                    <div class="items item7"><img src="assets/logos/python.png" draggable="false"></div>
-                    <div class="items item8"><img class="themed-img" data-light="assets/logos/next.png" data-dark="assets/logos/lightlogos/next.png" draggable="false"></div>
-                    <div class="items item9"><img class="themed-img" data-light="assets/logos/xampp.png" data-dark="assets/logos/lightlogos/xampp.png" draggable="false"></div>
+                <div class="wrapper">
+                    <div class="items2 item1"><img src="assets/logos/bun.png" draggable="false"></div>
+                    <div class="items2 item2"><img src="assets/logos/c++.png" draggable="false"></div>
+                    <div class="items2 item3"><img src="assets/logos/canva.png" draggable="false"></div>
+                    <div class="items2 item4"><img src="assets/logos/capcut.png" draggable="false"></div>
+                    <div class="items2 item5"><img src="assets/logos/java.png" draggable="false"></div>
+                    <div class="items2 item6"><img src="assets/logos/next.png" draggable="false"></div>
+                    <div class="items2 item7"><img src="assets/logos/postgresql.png" draggable="false"></div>
+                    <div class="items2 item8"><img src="assets/logos/php.png" draggable="false"></div>
                 </div>
             </div>
+            
         </section>
 
-        <section class="skills" id="skills">
+        <section class="section-3">
 
-            <h2>Skills</h2>
+            <h1>Skills</h1>
             <p>A comprehensive overview of my technical skills.</p>
-
+            
             <div class="skills-category">
-                <h3>Frontend</h3>
+
+                <h1>Frontend</h1>
+
                 <div class="skill">
-                <span>React</span>
-                <div class="progress-bar"><div class="progress" style="width:40%"></div></div>
-                <span class="percent">40%</span>
+                    <p class="skill-name">React</p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 40%;"></div>
+                    </div>
+                    <p class="skill-percent">40%</p>
                 </div>
+
                 <div class="skill">
-                <span>HTML</span>
-                <div class="progress-bar"><div class="progress" style="width:85%"></div></div>
-                <span class="percent">85%</span>
+                    <p class="skill-name">HTML</p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 85%;"></div>
+                    </div>
+                    <p class="skill-percent">85%</p>
                 </div>
+                
                 <div class="skill">
-                <span>Next.js</span>
-                <div class="progress-bar"><div class="progress" style="width:30%"></div></div>
-                <span class="percent">30%</span>
+                    <p class="skill-name">Next.js</p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 30%;"></div>
+                    </div>
+                    <p class="skill-percent">30%</p>
                 </div>
+                
                 <div class="skill">
-                <span>CSS</span>
-                <div class="progress-bar"><div class="progress" style="width:70%"></div></div>
-                <span class="percent">70%</span>
-                </div>
+                    <p class="skill-name">CSS</p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 70%;"></div>
+                    </div>
+                    <p class="skill-percent">70%</p>
+                </div>                
+
             </div>
 
             <div class="skills-category">
-                <h3>Backend</h3>
+
+                <h1>Backend</h1>
+
                 <div class="skill">
-                <span>Node.js</span>
-                <div class="progress-bar"><div class="progress" style="width:40%"></div></div>
-                <span class="percent">40%</span>
-                </div>
+                    <p class="skill-name">Node.js</p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 40%;"></div>
+                    </div>
+                    <p class="skill-percent">40%</p>
+                </div>   
+                
                 <div class="skill">
-                <span>JavaScript</span>
-                <div class="progress-bar"><div class="progress" style="width:40%"></div></div>
-                <span class="percent">40%</span>
-                </div>
-            </div>
-
-        </section>
-
-        <section class="contact" id="contact">
-
-            <h2>Contact</h2>
-            <p>I'm always open to discussing new opportunities, interesting projects, or just having a chat about technology.</p>
-
-            <div class="contact-content">
-                <div class="contact-left">
-                    <h3>Let's Connect</h3>
-                    <div class="contact-item">
-                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"><path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z"/></svg>
-                        <p>202311074@gordoncollege.edu.ph</p>
+                    <p class="skill-name">JavaScript</p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 40%;"></div>
                     </div>
-                    <div class="contact-item">
-                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"><path d="M798-120q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l44 164q4 14-1 27t-15 22L320-440q32 58 78 104t104 78l114-114q11-11 22.5-15t26.5-2l164 44q13 3 22.5 13t9.5 25v162q0 18-12 30t-30 12Z"/></svg>
-                        <p>0961 612 2655</p>
-                    </div>
-                    <div class="contact-item">
-                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"><path d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 294q122-112 181-203.5T720-552q0-109-68.5-178.5T480-800q-103 0-171.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0-121-79.5-238.5T480-80Z"/></svg>
-                        <p>Olongapo City, Zambales</p>
-                    </div>
-                </div>
-                <div class="contact-right">
-                    <h3>Available For</h3>
-                    <ul>
-                        <li>Full-time opportunities</li>
-                        <li>Freelance projects</li>
-                        <li>Consulting work</li>
-                        <li>Open source collaboration</li>
-                    </ul>
-                </div>
+                    <p class="skill-percent">40%</p>
+                </div>                   
+
             </div>
 
         </section>
 
     </main>
-
-    <footer>
-        <div class="footer-top">
-            <div class="follow">
-                <a href="https://www.facebook.com/marktob3r" target="_blank">
-                    <img src="assets/logos/facebook.png" alt="facebook" draggable="false">
-                </a>
-            </div>
-            <div class="follow">
-                <a href="https://www.instagram.com/m4rktober" target="_blank">
-                    <img src="assets/logos/instagram.png" alt="instagram" draggable="false">
-                </a>
-            </div>
-            <div class="follow">
-                <a href="https://github.com/Marktob3r" target="_blank">
-                    <img class="themed-img" data-light="assets/logos/github.png" data-dark="assets/logos/lightlogos/github.png" alt="github" draggable="false">
-                </a>
-            </div>
-            <div class="follow">
-                <a href="https://www.youtube.com/@Straw0457" target="_blank">
-                    <img src="assets/logos/youtube.png" alt="youtube" draggable="false">
-                </a>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>© <span id="year"></span> Mark Christian Gabriel. All Rights Reserved.</p>
-            <p>Built with HTML, CSS, and JavaScript</p>
-        </div>
-    </footer>
     
 </body>
 
